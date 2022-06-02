@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAolBMVEXx8fH////1/Pvu09bQiZCvACHWmZ7oyszCYWr++/y2O0OtABGyGC6zHTKsAAyxECn79PXj4+g0NGkwMGdJSXUrK2QUFFs6Om1ERHPq4OAmJmKsAACxJSwMDFk/P3COjqdXV4BnZ4rMgIWDg5/UkpdhYIa9VFxycpJUNGOenrO8u8p6epirq73OztkcHF5hR229Oz4AAFa5CyBhT3VWP2pIJVoH6pqlAAACy0lEQVR4nO2YW3PUMAyFs9yXW7FkV46360tDms2tQIH//9dQWp76AGPPeOkw+h40eTyjHB/JbhpBEARBEARBEARBEARBEAThv2C3/yPPsigRoEBbzTwuvz+/fH2bwVVbouBIIzGj38r21UUuwwBEMcDp4kMGhyIF37rdADjsA2LcjwjYTFzUagAnBafDxwzKFFxq9HHwD8XGRGTt7L2n2VqC/nkWBQJYAQGsK4CZlAccGw047yJAv5sRIO2yKFMAPaYEEftEEeNAmvRMVttZUzyLguPQJMTUdOyDJgCQWrhsXYFF0fcXOVyXnYU+aGN16I2lMBjruJDrOufN3MHp7iKDQicS0rgSYlg1YreVpCI3RLEP6PTuZQaFCoDMyI03YfFghomdGDcZtCYD8P1VDp8L/8KUnIvr4JxdZ3A0Be9oXLyDbvJncWJUPYJeued+CgbctDhwy+S4K6s7h4JLTz5tcdxvwdwvHEZ60VzH3ntOpNc5lCkgjt+VwCyKLRCauMVQD2B33ebEw7sMCp2InD8EM3EHZrDgk/ZgY+/B+4FOd+8zKFNwTLtgOIwWA1bxUHJqi+hV8Xha9v7Hmxxuynpge2uTj9pzKkfP+RyJv3pI3AhMf1lgHlEg4GEy3ftgZB+YzQc4bD7Q++5ckwm1G2YuaSbtYuct2mD5bIRoPKb9pxyKFByTGrYM5smkFU8mWBfCrSsIo/Knu/qpfIxLzwvZyGuZHbstogMShtEQdiOeZUtzl86Y+2Jubx+Xn/V78BeyXFDmgybP7BXOQpN13mvkQXuTlXoVMrE95AR/jbnQZg2/GrOxyZr/NfaDJ3AW/rmC9nPWNlxhV24PObFbI5XbQ86lqMadqb3OuhlWuDf+eyc+AQV5jyQV3lDarIeiGu9I7SFnDauxpbVXOQ+GNd4Tm7xH0wpvqoIgCIIgCIIgCIIgCIIgCMLT4xeV35YwD7PmoQAAAABJRU5ErkJggg==" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAolBMVEXx8fH////1/Pvu09bQiZCvACHWmZ7oyszCYWr++/y2O0OtABGyGC6zHTKsAAyxECn79PXj4+g0NGkwMGdJSXUrK2QUFFs6Om1ERHPq4OAmJmKsAACxJSwMDFk/P3COjqdXV4BnZ4rMgIWDg5/UkpdhYIa9VFxycpJUNGOenrO8u8p6epirq73OztkcHF5hR229Oz4AAFa5CyBhT3VWP2pIJVoH6pqlAAACy0lEQVR4nO2YW3PUMAyFs9yXW7FkV46360tDms2tQIH//9dQWp76AGPPeOkw+h40eTyjHB/JbhpBEARBEARBEARBEARBEAThv2C3/yPPsigRoEBbzTwuvz+/fH2bwVVbouBIIzGj38r21UUuwwBEMcDp4kMGhyIF37rdADjsA2LcjwjYTFzUagAnBafDxwzKFFxq9HHwD8XGRGTt7L2n2VqC/nkWBQJYAQGsK4CZlAccGw047yJAv5sRIO2yKFMAPaYEEftEEeNAmvRMVttZUzyLguPQJMTUdOyDJgCQWrhsXYFF0fcXOVyXnYU+aGN16I2lMBjruJDrOufN3MHp7iKDQicS0rgSYlg1YreVpCI3RLEP6PTuZQaFCoDMyI03YfFghomdGDcZtCYD8P1VDp8L/8KUnIvr4JxdZ3A0Be9oXLyDbvJncWJUPYJeued+CgbctDhwy+S4K6s7h4JLTz5tcdxvwdwvHEZ60VzH3ntOpNc5lCkgjt+VwCyKLRCauMVQD2B33ebEw7sMCp2InD8EM3EHZrDgk/ZgY+/B+4FOd+8zKFNwTLtgOIwWA1bxUHJqi+hV8Xha9v7Hmxxuynpge2uTj9pzKkfP+RyJv3pI3AhMf1lgHlEg4GEy3ftgZB+YzQc4bD7Q++5ckwm1G2YuaSbtYuct2mD5bIRoPKb9pxyKFByTGrYM5smkFU8mWBfCrSsIo/Knu/qpfIxLzwvZyGuZHbstogMShtEQdiOeZUtzl86Y+2Jubx+Xn/V78BeyXFDmgybP7BXOQpN13mvkQXuTlXoVMrE95AR/jbnQZg2/GrOxyZr/NfaDJ3AW/rmC9nPWNlxhV24PObFbI5XbQ86lqMadqb3OuhlWuDf+eyc+AQV5jyQV3lDarIeiGu9I7SFnDauxpbVXOQ+GNd4Tm7xH0wpvqoIgCIIgCIIgCIIgCIIgCMLT4xeV35YwD7PmoQAAAABJRU5ErkJggg==" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate">1 USD = 118.16 NPR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
